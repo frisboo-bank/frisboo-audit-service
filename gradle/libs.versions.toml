@@ -1,0 +1,11 @@
+[versions]
+corebanking-convention = "0.0.1-alpha.1-SNAPSHOT"
+corebanking-frisboo = "0.0.1-alpha.1-SNAPSHOT"
+
+[libraries]
+corebanking-frisboo-bom = { group = "com.frisboo.corebanking.core", name = "frisboo-bom", version.ref = "corebanking-frisboo" }
+corebanking-frisboo-core = { group = "com.frisboo.corebanking.core", name = "frisboo-core" }
+corebanking-frisboo-grpc = { group = "com.frisboo.corebanking.core", name = "frisboo-grpc" }
+
+[plugins]
+coreBankingConvention = { id = "com.frisboo.corebanking.gradle-convention-plugin", version.ref = "corebanking-convention" }
